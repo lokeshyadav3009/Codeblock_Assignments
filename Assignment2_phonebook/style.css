@@ -1,0 +1,61 @@
+h1{
+    background-color: #606c38;
+    margin: 10px auto;
+    border: 2px solid #a8dadc;
+    font-size: 30px;
+    width: 500px;
+    padding: 30px;
+}
+
+h1:hover{
+    background-color: #90e0ef;
+    width: 600px;
+    font-size: 35px;
+    padding: 30px;
+}
+
+h1::first-letter{
+    font-size: 60px;
+}
+
+h1::before{
+    content: "\260E";
+}
+
+.Main:hover{
+    background-color:#90e0ef ;
+}
+
+.Main{
+    background-color: #023047;
+    font-size: 40px;
+    color: white;
+    position: sticky;
+    top: 10px;
+
+}
+
+.lis{
+    background-color: #ffe8d6;
+    font-size: 15px;
+    color: black;
+    list-style-type: none;
+}
+
+li::before{
+    content:"\2706";
+}
+
+li::first-letter{
+    font-size: 30px;
+}
+
+
+section{
+    margin: 20px auto;
+    width: 900px;
+}
+
+
+
+
