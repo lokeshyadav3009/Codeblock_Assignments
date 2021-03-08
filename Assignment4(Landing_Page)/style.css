@@ -1,0 +1,157 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Navbar */
+nav{
+    background-color: #14213d;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    width: 100vw;
+}
+
+
+nav ul{
+    border: 2px solid  #14213d ;
+    width: 60vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+@media all and (max-width:386px){
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* Mainframe */
+
+#maind1{
+    height: 70vh;
+    width: 95vw;
+    animation: mainanm 5s infinite;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin: 20px auto;
+}
+
+@keyframes mainanm{
+    0%{
+        background-image: url(https://source.unsplash.com/1600x500/?Tulips);
+        
+    }
+    50%{        
+        
+        background-image: url(https://source.unsplash.com/1600x500/?Lavender);
+        
+    }
+    100%{        
+        background-image: url(https://source.unsplash.com/1600x500/?Sunflower);
+        
+    }
+}
+
+
+
+.cards {
+    width: 90vw;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ccd5ae;
+}
+    
+article figure {
+    width: 300px;
+}
+    
+article figure img {
+    width: 100%;
+    height: 100%;
+}
+    
+figcaption {
+    text-align: center;
+}
+    
+article h3 {
+    font-size: 1.8rem;
+    color: #1d3557;
+}
+    
+article p {
+    font-size: 1.4rem;
+}
+    
+article button {
+    padding: 5px 30px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+    
+article {
+    transition: all 0.2s;
+    box-shadow: 0px 2px 3px rgba(104, 104, 104);
+}
+    
+article:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
+/* footer */
+
+footer #foot{
+    min-height: 40px;
+    width: 100vw;
+    padding: 10px;
+    background-color: #14213d;
+}
+
+footer ul a{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 10px;
+    margin: 10px auto;
+    width: 70vw;
+}
+footer ul li{
+    transition: all 0.1s;
+}
+footer ul {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+footer ul li:hover{
+    transform: scale(1.05);
+}
+footer ul li img{
+    height:30px;
+}
+
