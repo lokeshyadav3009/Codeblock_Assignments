@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navbar CSS */
+.navbar1{
+    margin: 10px auto;
+}
+
+#nav_stick{
+    margin-right: 15px;
+    /* font-size: 2vw; */
+    font-size: 20px;
+
+}
+
+#nav_name:hover{
+    
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
+}
+
+#nav_name{
+    font-family: 'Fascinate', cursive;
+    /* font-size: 2vw; */
+    font-size: 30px;
+    margin-right: 20vw;
+}
+
+.nav-item{
+    margin-right: 1.5vw;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+}
+
+
+
+/* Main Profile Page */
+#main , #education, #projects, #contacts{
+    height: auto;
+    background-color: #f8edeb;
+    margin-top: 10vh;
+    font-family: fantasy;
+}
+
+#profile-pic{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#About{
+    font-family: system-ui;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10vh  auto;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#about-para{
+    font-size: 2rem;
+    font-family: "Gill Sans", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center;
+    margin: 20vh auto;
+    
+}
+
+#l1::first-letter {
+    font-size: 3rem;
+    color: #1d3557;
+}
+
+#l2{
+    margin-left: 10vw;
+    font-weight: 999;
+    animation-delay: 250ms;
+}
+
+#about-para:hover{
+    animation: ani ease-in-out 1s alternate-reverse ;
+}
+
+@keyframes ani{
+    from {
+        transform: translateX(0);
+    }
+    
+    to {
+        transform: translateX(-5em);
+    }
+}
+
+
+/* Strengths and skills */
+
+#strenghts-heading,
+#education-heading{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    font-family: "Gill Sans", sans-serif;
+    transform-origin: bottom right 60px;
+    
+}
+
+#strenghts-heading:hover{
+    animation: ani ease-in-out 1s reverse ;
+    
+}
+
+@keyframes ani{
+    from {
+        transform: translateX(0);
+    }
+    
+    to {
+        transform: translateX(-5em);
+    }
+}
+
+#strenghts{
+    height: auto;
+    background-color: hsl(141, 45%, 81%);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+ }
+
+
+#strenghts-card{
+    padding: 5vh;
+    align-items: center; 
+    border: 2px solid;
+} 
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 5px 5px black;
+}
+
+.card-text{
+    text-align: center;
+    font-weight: 900;
+    
+}
+
+
+/* Education */
+
+
+#education:hover{
+    animation: edu ease-in-out 1s reverse ;
+    
+}
+
+@keyframes edu{
+    from {
+        transform: translateX(0);
+    }
+    
+    to {
+        transform: translateX(15em);
+    }
+}
+
+
+.EDUH, .proh{
+    font-family: fantasy;
+}
+
+.EDUP, .prop{
+    font-family: 'Fascinate', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Oi', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ranchers', cursive;
+    font-family: 'Teko', sans-serif;
+}
+
+/* Projects */
+
+#projects{
+    height: auto;
+    background-color: hsl(141, 45%, 81%);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#projects:hover{
+    animation: pro ease-in-out 1s reverse ;
+    
+}
+
+@keyframes pro{
+    from {
+        transform: translateX(0);
+    }
+    
+    to {
+        transform: translateX(-15em);
+    }
+}
+
+
+/* Contact-Info */
+
+.contact-info{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+
+.contact-info:hover{
+    animation: flip; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
